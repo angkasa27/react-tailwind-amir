@@ -40,6 +40,16 @@ module.exports = {
         175: "1.75",
         200: "2",
       },
+      keyframes: {
+        out: {
+          "0%": { opacity: 0, display: "hidden" },
+          "100%": { opacity: 1 },
+        },
+      },
+      animation: {
+        out: "out .3s linear",
+        in: "out .3s linear reverse",
+      },
     },
   },
   variants: {

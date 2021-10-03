@@ -33,6 +33,7 @@ export default function Home() {
 export function Section1() {
   return (
     <section
+      name="sec1"
       id="sec1"
       className="sec-base bg-blue-100 flex justify-center relative"
     >
@@ -80,9 +81,12 @@ export function Section2() {
       <div className="flex flex-col justify-center py-32 px-4 md:px-0 md:mx-16 md:py-0 md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-xl">
         <div className="flex justify-between items-baseline">
           <h1 className="h1 text">{Sec2.h1}</h1>
-          <p className="text-xs md:text-sm font-black text-blue-500">
-            {Sec2.more}
-          </p>
+          <a
+            href={Sec2.more.href}
+            className="text-xs md:text-sm font-black text-blue-500"
+          >
+            {Sec2.more.name}
+          </a>
         </div>
         {/* <div className=" mt-4 overflow-x-scroll">
           <div className="flex w-180 pb-6">
@@ -206,39 +210,80 @@ export function Navbar() {
   }, [view]);
 
   return (
-    <nav className="bg-white w-screen z-50 fixed shadow-md px-4 md:px-16">
-      <div className="flex justify-between py-2 md:py-4">
-        <img src={Nav.logo} className="w-10" alt="logo-main" />
-        <div className="md:flex justify-center items-center hidden">
+    <>
+      <div
+        className={
+          "md:hidden fixed w-screen h-full bg-white z-40 flex flex-col justify-between items-center" +
+          classes
+        }
+      >
+        <div className="flex justify-between w-screen py-3 px-4">
+          <Link
+            className="cursor-pointer"
+            onClick={() => setView(!view)}
+            to="sec1"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <img src={Nav.logo} className="w-10" alt="logo-main" />
+          </Link>
+          <svg
+            viewBox="0 0 329.26933 329"
+            onClick={() => setView(!view)}
+            className="w-5 md:hidden"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
+          </svg>
+        </div>
+        <div className="flex flex-col justify-between items-center">
           {Nav.item.map((v) => (
-            <a className="nav-text mx-5" href={v.href}>
+            <a className="py-4 block font-black text-lg" href={v.href}>
               {v.name}
             </a>
           ))}
+          <div className="h-20" />
         </div>
-        <svg
-          onClick={() => setView(!view)}
-          className="w-6 md:opacity-0"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          />
-        </svg>
+        <p className="text-center mb-2 text-xs text-gray-300">
+          Created by Dimas Angkasa Nurindra
+        </p>
       </div>
-      <div className={"md:hidden" + classes}>
-        {Nav.item.map((v) => (
-          <a className="py-2 block font-black" href={v.href}>
-            {v.name}
-          </a>
-        ))}
-      </div>
-    </nav>
+      <nav className="bg-white w-screen z-30 fixed shadow-md">
+        <div className="flex justify-between py-3 md:py-4  px-4 md:px-16">
+          <Link
+            className="cursor-pointer"
+            to="sec1"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <img src={Nav.logo} className="w-10" alt="logo-main" />
+          </Link>
+          <div className="md:flex justify-center items-center hidden">
+            {Nav.item.map((v) => (
+              <a className="nav-text mx-5" href={v.href}>
+                {v.name}
+              </a>
+            ))}
+          </div>
+          <svg
+            onClick={() => setView(!view)}
+            className="w-6 md:opacity-0"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </div>
+      </nav>
+    </>
   );
 }

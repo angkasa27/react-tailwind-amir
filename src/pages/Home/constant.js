@@ -25,7 +25,7 @@ export const Sec1 = {
 
 export const Sec2 = {
   h1: "Recent Activities",
-  more: "more",
+  more: { name: "more", href: "/#" },
   // Max 4, Jika lebih tidak akan tampil
   content: [
     {

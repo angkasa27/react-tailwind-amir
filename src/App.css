@@ -45,7 +45,7 @@ body {
 }
 
 .nav-text {
-  @apply cursor-pointer block font-black transition duration-200 ease-in hover:border-b-2 hover:border-blue-400 md:text-base md:px-4 md:py-2;
+  @apply cursor-pointer block font-black transition duration-200 ease-in border-b-2 border-white hover:border-blue-400 md:text-base md:px-4 md:py-2;
 }
 
 .bg-glass {
