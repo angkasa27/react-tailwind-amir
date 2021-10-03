@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+See the result [here](https://angkasa27.github.io/react-tailwind-amir/).
+
 ## Available Scripts
 
 In the project directory, you can run:
