@@ -8,10 +8,6 @@ body {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-#sec0 {
-  /* background: no-repeat center url(./assets/sec0.jpg); */
   background-size: cover;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -41,15 +37,15 @@ body {
 }
 
 .btn-main {
-  @apply uppercase rounded-full  text-white bg-blue-400 px-3 py-1 text-sm font-black transition-colors duration-200  hover:bg-blue-500;
+  @apply cursor-pointer uppercase rounded-full  text-white bg-blue-400 px-3 py-1 text-sm font-black transition-colors duration-200  hover:bg-blue-500 md:text-base md:px-4 md:py-2;
 }
 
 .btn-outline {
-  @apply uppercase rounded-full border-2 border-blue-400 text-blue-500 px-3 py-1 text-sm font-black transition-colors duration-200 hover:text-white hover:bg-blue-400;
+  @apply cursor-pointer uppercase rounded-full border-2 border-blue-400 text-blue-500 px-3 py-1 text-sm font-black transition-colors duration-200 hover:text-white hover:bg-blue-400 md:text-base md:px-4 md:py-2;
 }
 
 .nav-text {
-  @apply block font-black transition duration-200 ease-in hover:border-b-2 hover:border-blue-400;
+  @apply cursor-pointer block font-black transition duration-200 ease-in hover:border-b-2 hover:border-blue-400 md:text-base md:px-4 md:py-2;
 }
 
 .bg-glass {

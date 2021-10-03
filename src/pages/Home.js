@@ -3,6 +3,7 @@ import IMAGES from "../assets/images";
 import SVG, { Instagram, LinkedIn, WhatsApp } from "../assets/svg";
 import moment from "moment";
 import PropTypes from "prop-types";
+import { Link } from "react-scroll";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export function Section1() {
       id="sec1"
       className="sec-base bg-blue-100 flex justify-center relative"
     >
-      <div className="md:flex md:justify-between md:items-center md:max-w-screen-xl md:h-screen md:w-full md:mx-16">
+      <div className="md:flex md:justify-between md:items-center md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-xl md:h-screen md:w-full md:mx-16 md:pt-20">
         <div className="flex flex-col items-center px-4 pt-36 pb-20 md:px-0 md:pt-0 md:pb-0 md:items-start">
           <h2 className="h2 clas mb-12 md:mb-0">Hi and welcome to</h2>
           <img src={SVG.Illustration} alt="illus" className="w-48 md:hidden" />
@@ -46,15 +47,22 @@ export function Section1() {
           </p>
           <div className="flex justify-center mt-5">
             <span className="btn-outline mr-2">see project</span>
-            <a href="#sec3" className="btn-outline">
+            <Link
+              activeClass="active"
+              className="btn-outline"
+              to="sec3"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               contact me
-            </a>
+            </Link>
           </div>
         </div>
         <img
           src={SVG.Illustration}
           alt="illus"
-          className="w-72 hidden md:block"
+          className="w-80 hidden md:block"
         />
       </div>
     </section>
@@ -86,8 +94,12 @@ export function Section2() {
   ];
 
   return (
-    <section id="sec2" className="sec-base bg-green-100 flex justify-center">
-      <div className="flex flex-col justify-center py-32 px-4 md:px-0 md:mx-16 md:py-0 md:max-w-screen-xl">
+    <section
+      id="sec2"
+      name="sec2"
+      className="sec-base bg-green-100 flex justify-center"
+    >
+      <div className="flex flex-col justify-center py-32 px-4 md:px-0 md:mx-16 md:py-0 md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-xl">
         <div className="flex justify-between items-baseline">
           <h1 className="h1 text">Recent Activities</h1>
           <p className="text-xs md:text-sm font-black text-blue-500">more</p>
@@ -112,10 +124,11 @@ export function Section2() {
 export function Section3() {
   return (
     <section
-      id="sec1"
-      className="w-screen relative bg-blue-300 flex flex-col justify-center items-center h-screen80"
+      id="sec3"
+      name="sec3"
+      className="w-screen relative bg-blue-300 flex flex-col justify-center items-center h-screen90"
     >
-      <div className="pt-5 pb-20 px-4 md:pb-0 md:pt-0 md:max-w-screen-xl w-full">
+      <div className="pt-5 pb-20 px-4 md:pb-0 md:pt-0 md:max-w-screen-lg lg:max-w-screen-lg xl:max-w-screen-xl w-full">
         <div className="flex justify-between items-center rounded-xl bg-white bg-opacity-50 w-full py-3 px-4 md:px-10 md:py-10">
           <div>
             <h1 className="h1">Work Inquiry</h1>
@@ -126,15 +139,17 @@ export function Section3() {
           </div>
           <span className="btn-main">Get in Touch</span>
         </div>
-        <p className="p text-white mt-5 text-center">Magetan, Indonesia</p>
-        <h4 className="h4 text-white mt-0.5 tracking-wide text-center">
+        <p className="p text-white mt-5 md:mt-10 text-center">
+          Magetan, Indonesia
+        </p>
+        <h4 className="h4 text-white mt-0.5 md:mt-1 tracking-wide text-center">
           ahmadamirudin901@gmail.com
         </h4>
-        <h4 className="h4 text-white mt-0.5 tracking-wider text-center">
+        <h4 className="h4 text-white mt-0.5 md:mt-1 tracking-wider text-center">
           (+62) 821 4314 2419
         </h4>
 
-        <div className="mt-5 flex justify-center items-center">
+        <div className="mt-5 md:mt-10 flex justify-center items-center">
           <a
             href="https://whatsapp.com"
             target="_blank"
