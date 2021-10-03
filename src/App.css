@@ -1,7 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.desc {
-  @apply text-gray-200 mt-5 text-lg;
+body {
+  margin: 0;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#sec0 {
+  /* background: no-repeat center url(./assets/sec0.jpg); */
+  background-size: cover;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.sec-base {
+  @apply w-screen md:h-screen m-0 p-0;
+}
+
+.h1 {
+  @apply text-2xl md:text-4xl font-black;
+}
+
+.h2 {
+  @apply text-xl md:text-3xl;
+}
+
+.h4 {
+  @apply text-sm md:text-lg;
+}
+
+.p {
+  @apply text-xs md:text-base;
+}
+
+.btn-main {
+  @apply uppercase rounded-full  text-white bg-blue-400 px-3 py-1 text-sm font-black transition-colors duration-200  hover:bg-blue-500;
+}
+
+.btn-outline {
+  @apply uppercase rounded-full border-2 border-blue-400 text-blue-500 px-3 py-1 text-sm font-black transition-colors duration-200 hover:text-white hover:bg-blue-400;
+}
+
+.nav-text {
+  @apply block font-black transition duration-200 ease-in hover:border-b-2 hover:border-blue-400;
+}
+
+.bg-glass {
+  backdrop-filter: blur(3px);
+}
+
+@media (min-width: 768px) {
+  .h-screen90 {
+    height: 90vh;
+  }
+
+  .h-screen80 {
+    height: 80vh;
+  }
 }

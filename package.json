@@ -1,5 +1,5 @@
 {
-  "homepage": "https://angkasa27.github.io/react-tailwindbase",
+  "homepage": "https://angkasa27.github.io/react-tailwind-amir",
   "name": "react-tailwindbase",
   "version": "0.1.0",
   "private": true,
@@ -7,10 +7,13 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "moment": "^2.29.1",
     "postcss-cli": "^9.0.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
