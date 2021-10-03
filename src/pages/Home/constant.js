@@ -1,6 +1,6 @@
 import IMAGES from "../../assets/images";
 
-// SEMUA TEXT DITULIS DISINI
+// SEMUA CONTENT DITULIS DISINI
 
 export const Nav = {
   logo: IMAGES.logo,
