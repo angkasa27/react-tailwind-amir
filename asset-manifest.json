@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-tailwind-amir/static/css/main.e3ee2718.chunk.css",
+    "main.js": "/react-tailwind-amir/static/js/main.cac845d6.chunk.js",
+    "main.js.map": "/react-tailwind-amir/static/js/main.cac845d6.chunk.js.map",
+    "runtime-main.js": "/react-tailwind-amir/static/js/runtime-main.33c618ef.js",
+    "runtime-main.js.map": "/react-tailwind-amir/static/js/runtime-main.33c618ef.js.map",
+    "static/js/2.c3c09984.chunk.js": "/react-tailwind-amir/static/js/2.c3c09984.chunk.js",
+    "static/js/2.c3c09984.chunk.js.map": "/react-tailwind-amir/static/js/2.c3c09984.chunk.js.map",
+    "static/js/3.6cfacf6b.chunk.js": "/react-tailwind-amir/static/js/3.6cfacf6b.chunk.js",
+    "static/js/3.6cfacf6b.chunk.js.map": "/react-tailwind-amir/static/js/3.6cfacf6b.chunk.js.map",
+    "index.html": "/react-tailwind-amir/index.html",
+    "static/css/main.e3ee2718.chunk.css.map": "/react-tailwind-amir/static/css/main.e3ee2718.chunk.css.map",
+    "static/js/2.c3c09984.chunk.js.LICENSE.txt": "/react-tailwind-amir/static/js/2.c3c09984.chunk.js.LICENSE.txt",
+    "static/media/Illustration.3d1f4e4c.svg": "/react-tailwind-amir/static/media/Illustration.3d1f4e4c.svg",
+    "static/media/border1.ab028b52.svg": "/react-tailwind-amir/static/media/border1.ab028b52.svg",
+    "static/media/border2.e9f8f4c9.svg": "/react-tailwind-amir/static/media/border2.e9f8f4c9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33c618ef.js",
+    "static/js/2.c3c09984.chunk.js",
+    "static/css/main.e3ee2718.chunk.css",
+    "static/js/main.cac845d6.chunk.js"
+  ]
+}
